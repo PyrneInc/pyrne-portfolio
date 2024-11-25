@@ -1,5 +1,5 @@
 export default function Skills() {
     return (
-        <div id="skills"></div>
+        <section id="skills"></section>
     )
 }

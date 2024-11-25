@@ -1,5 +1,5 @@
 export default function Projects() {
     return (
-        <div id="projects"></div>
+        <section id="projects"></section>
     )
 }
