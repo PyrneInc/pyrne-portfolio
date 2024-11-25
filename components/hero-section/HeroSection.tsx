@@ -8,13 +8,12 @@ export default function HeroSection() {
         <section
             id="home"
             className="
-                min-h-screen 
                 flex flex-col lg:flex-row items-center justify-between 
                 px-6 lg:px-20 py-16"
         >
             <div className="flex-1 text-center lg:text-left">
                 <h1 className="
-                        text-white text-4xl lg:text-6xl font-bold 
+                        text-white text-4xl lg:text-5xl font-bold 
                         opacity-0 animate-fade-in delay-500
                 ">
                     Hi, I'm <span className="text-electricBlue">Mark Mwangi</span>
@@ -37,7 +36,7 @@ export default function HeroSection() {
                             bg-electricBlue text-white 
                             py-2 px-6 rounded-full
                             text-lg font-semibold 
-                            hover:bg-neonGreen hover:scale-105
+                            hover:bg-yellow-500 hover:scale-95
                             transition-transform duration-300"
                     >
                         Contact Me
@@ -47,7 +46,7 @@ export default function HeroSection() {
                             border border-electricBlue text-electricBlue 
                             py-2 px-6  rounded-full 
                             text-lg font-semibold 
-                            hover:bg-electricBlue hover:text-white hover:scale-105
+                            hover:border-yellow-500 hover:text-yellow-500 hover:scale-95
                             transition-transform duration-300"
                     >
                         View Projects
