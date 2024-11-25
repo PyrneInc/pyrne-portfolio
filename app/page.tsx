@@ -2,19 +2,21 @@ import About from "@/components/about/About";
 import ContactMe from "@/components/contact-me/ContactMe";
 import Header from "@/components/header/Header";
 import HeroSection from "@/components/hero-section/HeroSection";
-import ParticlesBackground from "@/components/particles-background/ParticlesBackground";
 import Projects from "@/components/projects/Projects";
 import Skills from "@/components/skills/Skills";
+import dynamic from "next/dynamic";
+import Head from "next/head";
 import Image from "next/image";
 import Script from "next/script";
+
+// lazy load particles background
+const ParticlesBackground = dynamic(
+  () => import("@/components/particles-background/ParticlesBackground")
+)
 
 export default function Home() {
   return (
     <>
-     <Script
-        src="https://cdn.jsdelivr.net/npm/particles.js"
-        strategy="lazyOnload"
-      />
       <Header />
       <main>
         <HeroSection />
