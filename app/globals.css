@@ -12,3 +12,7 @@ body {
   background: var(--background);
   font-family: Poppins, Helvetica, sans-serif;
 }
+
+a, button {
+  @apply cursor-pointer;
+}

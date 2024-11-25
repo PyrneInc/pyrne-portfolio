@@ -1,4 +1,5 @@
 import Link from "next/link"
+import MenuIcon from "../icons/MenuIcon"
 
 export default function Header() {
 
@@ -20,12 +21,17 @@ export default function Header() {
       href: '#contact-me'
     }
   ]
+  
   return (
     <header className="p-4 flex justify-between">
       <div className="logo">
-        <span className="text-electricBlue font-bold text-lg">Mark Mwangi</span>
+        <span className="text-electricBlue font-bold text-lg">
+          <Link href="/">
+            Mark Mwangi
+          </Link>
+        </span>
       </div>
-      <nav className="flex gap-6 text-metallicGrey">
+      <nav className="hidden lg:flex gap-6 text-metallicGrey">
         {
           links.map((link, index) => (
             <Link
@@ -42,6 +48,9 @@ export default function Header() {
           ))
         }
       </nav>
+      <button className="text-electricBlue lg:hidden">
+        <MenuIcon className="size-6" />
+      </button>
     </header>
   )
 }
